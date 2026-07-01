@@ -14,6 +14,15 @@
   --radius: 8px;
 }
 
+[data-theme="dark"] {
+  --color-primary: #5b9dff;
+  --color-primary-dark: #3f7fe0;
+  --color-text: #f0f0f0;
+  --color-bg: #121212;
+  --color-muted: #a0a0a0;
+  --color-border: #2e2e2e;
+}
+
 /* ===== 2. RESET ===== */
 * {
   margin: 0;
@@ -26,6 +35,7 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img {
@@ -51,6 +61,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 header h1 {
@@ -76,6 +87,21 @@ nav a:hover,
 nav a:focus-visible {
   color: var(--color-primary);
   border-bottom-color: var(--color-primary);
+}
+
+#theme-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: var(--radius);
+  padding: var(--spacing-sm) var(--spacing-md);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#theme-toggle:hover {
+  background: var(--color-border);
 }
 
 /* ===== 4. MAIN CONTENT ===== */
@@ -111,7 +137,7 @@ article {
   border-radius: var(--radius);
   padding: var(--spacing-lg);
   background: var(--color-bg);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 article:hover {
