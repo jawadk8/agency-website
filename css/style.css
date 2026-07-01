@@ -105,11 +105,7 @@ nav a:focus-visible {
 }
 
 /* ===== 4. MAIN CONTENT ===== */
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: var(--spacing-xl) var(--spacing-lg);
-}
+/* main width is now controlled per-section by Bootstrap's .container class */
 
 section {
   margin-bottom: var(--spacing-xl);
@@ -120,10 +116,7 @@ section h2 {
   margin-bottom: var(--spacing-md);
 }
 
-section p {
-  color: var(--color-muted);
-  max-width: 65ch;
-}
+/* paragraph width/centering now handled by Bootstrap's .lead and .container classes per section */
 
 /* Card grid: used for services / portfolio / careers items */
 .card-grid {
