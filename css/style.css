@@ -149,6 +149,16 @@ article h3 {
   margin-bottom: var(--spacing-sm);
 }
 
+/* Bootstrap card hover-lift (used on services/portfolio/careers cards) */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
 /* ===== 5. FOOTER ===== */
 footer {
   background: var(--color-text);
