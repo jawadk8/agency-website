@@ -77,3 +77,61 @@ nav a:focus-visible {
   color: var(--color-primary);
   border-bottom-color: var(--color-primary);
 }
+
+/* ===== 4. MAIN CONTENT ===== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+section {
+  margin-bottom: var(--spacing-xl);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-md);
+}
+
+section p {
+  color: var(--color-muted);
+  max-width: 65ch;
+}
+
+/* Card grid: used for services / portfolio / careers items */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+article {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-lg);
+  background: var(--color-bg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+article h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ===== 5. FOOTER ===== */
+footer {
+  background: var(--color-text);
+  color: #fff;
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
