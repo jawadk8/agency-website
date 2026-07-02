@@ -31,7 +31,7 @@
               class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2"
             >
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -64,15 +64,112 @@
     </header>
 
     <main>
-      <section class="py-5 bg-body-tertiary">
-        <div class="container text-center py-5">
-          <h2 class="display-5 fw-bold mb-3">Welcome to Hexler Media</h2>
-          <p class="lead text-muted mb-4">
-            We design and build digital experiences that grow your business.
-          </p>
-          <a href="contact.html" class="btn btn-primary btn-lg">Get in touch</a>
+      <div
+        id="heroCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-      </section>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="d-flex align-items-center justify-content-center text-center bg-body-tertiary"
+              style="min-height: 480px"
+            >
+              <div class="container py-5">
+                <h2 class="display-5 fw-bold mb-3">Welcome to Hexler Media</h2>
+                <p class="lead text-muted mb-4">
+                  We design and build digital experiences that grow your
+                  business.
+                </p>
+                <a href="contact.html" class="btn btn-primary btn-lg"
+                  >Get in touch</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="d-flex align-items-center justify-content-center text-center bg-primary text-white"
+              style="min-height: 480px"
+            >
+              <div class="container py-5">
+                <h2 class="display-5 fw-bold mb-3">
+                  Strategy Meets Creativity
+                </h2>
+                <p class="lead mb-4">
+                  From brand identity to full campaigns, we turn ideas into
+                  measurable growth.
+                </p>
+                <a href="services.html" class="btn btn-light btn-lg"
+                  >Explore Our Services</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="d-flex align-items-center justify-content-center text-center bg-dark text-white"
+              style="min-height: 480px"
+            >
+              <div class="container py-5">
+                <h2 class="display-5 fw-bold mb-3">See Our Work in Action</h2>
+                <p class="lead mb-4">
+                  Real projects, real results — take a look at what we've built
+                  for our clients.
+                </p>
+                <a href="portfolio.html" class="btn btn-outline-light btn-lg"
+                  >View Portfolio</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
 
     <footer class="bg-dark text-light pt-5 pb-4 mt-auto">
