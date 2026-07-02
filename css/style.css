@@ -45,7 +45,6 @@ img {
 
 a {
   color: var(--color-primary);
-  text-decoration: none;
 }
 
 /* ===== 3. HEADER / NAV ===== */
@@ -80,6 +79,7 @@ nav a {
   font-weight: 500;
   padding: var(--spacing-sm) 0;
   border-bottom: 2px solid transparent;
+  text-decoration: none;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 
@@ -150,6 +150,20 @@ article h3 {
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Ensure carousel arrows stay visible/high-contrast on any slide background */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 1.5rem;
+  background-size: 50%;
+}
+
+/* Bootstrap's text-secondary is too low-contrast against a dark footer background */
+footer.bg-dark .text-secondary {
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 /* ===== 5. FOOTER ===== */
