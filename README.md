@@ -69,4 +69,4 @@ Bootstrap is loaded via CDN rather than self-hosted, which slightly affects mobi
 
 - Built from scratch by Jawad Faiz
 - With the help of Talha and Haseeb
-- Built with guidance from Claude (Anthropic) for code, review, debugging and Bootstrap implementation; all code reviewed and understood by the author
+- Built with guidance from Claude (Anthropic) for code, review, debugging and Bootstrap implementation; all code reviewed and understood by the author.
